@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>العاب أدهم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚔️ قيصر للألعاب</h1>
+        <p>بوابتك الشاملة لأفضل فئات الألعاب الأونلاين عبر أشهر 5 منصات عالمية</p>
+    </header>
+
+    <!-- شريط اختيار المنصة -->
+    <nav class="platforms-nav">
+        <button class="plat-btn active" onclick="filterPlatform('all', this)">🌐 جميع المنصات</button>
+        <button class="plat-btn" onclick="filterPlatform('poki', this)">🎮 Poki</button>
+        <button class="plat-btn" onclick="filterPlatform('crazy', this)">🕹️ CrazyGames</button>
+        <button class="plat-btn" onclick="filterPlatform('y8', this)">🔥 Y8</button>
+        <button class="plat-btn" onclick="filterPlatform('yandex', this)">🚀 Yandex Games</button>
+        <button class="plat-btn" onclick="filterPlatform('chess', this)">♟️ Chess.com</button>
+    </nav>
+
+    <!-- 1. قسم Poki -->
+    <section class="categories-wrapper platform-section" data-platform="poki" style="--bg-grad: linear-gradient(120deg, #99f6e4 0%, #67e8f9 55%, #a5f3fc 100%);">
+        <div class="categories-top">
+            <h2>🎮 فئات موقع Poki</h2>
+            <div class="nav-arrows">
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-poki', -350)">&#8250;</button>
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-poki', 350)">&#8249;</button>
+            </div>
+        </div>
+        <div id="grid-poki" class="categories-two-rows">
+            <a class="cat-tile" href="https://poki.com/en/war" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب حرب</span><span class="cat-icon">🪖</span></a>
+            <a class="cat-tile" href="https://poki.com/en/action" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب أكشن</span><span class="cat-icon">💥</span></a>
+            <a class="cat-tile" href="https://poki.com/en/shooting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب الرماية</span><span class="cat-icon">🏹</span></a>
+            <a class="cat-tile" href="https://poki.com/en/fps" target="_blank" rel="noopener noreferrer"><span class="cat-label">تصويب منظور الشخص الأول</span><span class="cat-icon">🎯</span></a>
+            <a class="cat-tile" href="https://poki.com/en/guns" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب المسدسات</span><span class="cat-icon">🔫</span></a>
+            <a class="cat-tile" href="https://poki.com/en/racing" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب سباق</span><span class="cat-icon">🏎️</span></a>
+            <a class="cat-tile" href="https://poki.com/en/car" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب سيارات</span><span class="cat-icon">🚗</span></a>
+            <a class="cat-tile" href="https://poki.com/en/drifting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب الانجراف</span><span class="cat-icon">🛞</span></a>
+            <a class="cat-tile" href="https://poki.com/en/driving" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب القيادة</span><span class="cat-icon">🕹️</span></a>
+            <a class="cat-tile" href="https://poki.com/en/truck" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب الشاحنات</span><span class="cat-icon">🚚</span></a>
+            <a class="cat-tile" href="https://poki.com/en/police" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب الشرطة</span><span class="cat-icon">🚓</span></a>
+            <a class="cat-tile" href="https://poki.com/en/multiplayer" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب جماعية</span><span class="cat-icon">👥</span></a>
+            <a class="cat-tile" href="https://poki.com/en/2-player" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ثنائية اللاعبين</span><span class="cat-icon">🤝</span></a>
+            <a class="cat-tile" href="https://poki.com/en/adventure" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب المغامرة</span><span class="cat-icon">🧭</span></a>
+            <a class="cat-tile" href="https://poki.com/en/simulation" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب المحاكاة</span><span class="cat-icon">👷</span></a>
+            <a class="cat-tile" href="https://poki.com/en/fighting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب قتال</span><span class="cat-icon">🥊</span></a>
+            <a class="cat-tile" href="https://poki.com/en/zombie" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب زومبي</span><span class="cat-icon">🧟</span></a>
+            <a class="cat-tile" href="https://poki.com/en/horror" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب رعب</span><span class="cat-icon">👻</span></a>
+            <a class="cat-tile" href="https://poki.com/en/soccer" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب كرة القدم</span><span class="cat-icon">⚽</span></a>
+            <a class="cat-tile" href="https://poki.com/en/3d" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ثلاثية الأبعاد</span><span class="cat-icon">🧊</span></a>
+            <a class="cat-tile" href="https://poki.com/en/puzzle" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ألغاز</span><span class="cat-icon">🧩</span></a>
+            <a class="cat-tile" href="https://poki.com/en/brain" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب العقل</span><span class="cat-icon">🧠</span></a>
+            <a class="cat-tile" href="https://poki.com/en/girls" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب بنات</span><span class="cat-icon">👗</span></a>
+            <a class="cat-tile" href="https://poki.com/en" target="_blank" rel="noopener noreferrer"><span class="cat-label">كل فئات Poki</span><span class="cat-icon">⊞</span></a>
+        </div>
+    </section>
+
+    <!-- 2. قسم CrazyGames -->
+    <section class="categories-wrapper platform-section" data-platform="crazy" style="--bg-grad: linear-gradient(120deg, #ddd6fe 0%, #c4b5fd 55%, #a78bfa 100%);">
+        <div class="categories-top">
+            <h2>🕹️ فئات موقع CrazyGames</h2>
+            <div class="nav-arrows">
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-crazy', -350)">&#8250;</button>
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-crazy', 350)">&#8249;</button>
+            </div>
+        </div>
+        <div id="grid-crazy" class="categories-two-rows">
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/action" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب أكشن</span><span class="cat-icon">⚡</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/shooting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب تصويب</span><span class="cat-icon">🔫</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/war" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب حرب</span><span class="cat-icon">⚔️</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/multiplayer" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب متعددة اللاعبين</span><span class="cat-icon">🌐</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/io" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب .io</span><span class="cat-icon">🔵</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/2-player" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب لاعبين</span><span class="cat-icon">👥</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/driving" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب قيادة</span><span class="cat-icon">🏎️</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/car" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب سيارات</span><span class="cat-icon">🚗</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/adventure" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب مغامرات</span><span class="cat-icon">🗺️</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/sports" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب رياضة</span><span class="cat-icon">🏆</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/puzzle" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ألغاز</span><span class="cat-icon">🧩</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/horror" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب رعب</span><span class="cat-icon">💀</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/clicker" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب نقر</span><span class="cat-icon">🖱️</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/casual" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب خفيفة</span><span class="cat-icon">🎲</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/stickman" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ستيك مان</span><span class="cat-icon">🏃</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/minecraft" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ماينكرافت</span><span class="cat-icon">⛏️</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/t/escape" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب هروب</span><span class="cat-icon">🚪</span></a>
+            <a class="cat-tile" href="https://www.crazygames.com/ar/" target="_blank" rel="noopener noreferrer"><span class="cat-label">كل فئات CrazyGames</span><span class="cat-icon">⊞</span></a>
+        </div>
+    </section>
+
+    <!-- 3. قسم Y8 -->
+    <section class="categories-wrapper platform-section" data-platform="y8" style="--bg-grad: linear-gradient(120deg, #fecaca 0%, #fca5a5 55%, #f87171 100%);">
+        <div class="categories-top">
+            <h2>🔥 فئات موقع Y8</h2>
+            <div class="nav-arrows">
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-y8', -350)">&#8250;</button>
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-y8', 350)">&#8249;</button>
+            </div>
+        </div>
+        <div id="grid-y8" class="categories-two-rows">
+            <a class="cat-tile" href="https://ar.y8.com/tags/Action" target="_blank" rel="noopener noreferrer"><span class="cat-label">أكشن ومغامرات</span><span class="cat-icon">💥</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Shooting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب إطلاق نار</span><span class="cat-icon">🎯</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/War" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب حروب</span><span class="cat-icon">🪖</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Multiplayer" target="_blank" rel="noopener noreferrer"><span class="cat-label">لاعبين متعددين</span><span class="cat-icon">👥</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/2_Players" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب للاعبين</span><span class="cat-icon">🕹️</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Racing" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب سباقات</span><span class="cat-icon">🏁</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Fighting" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب قتال</span><span class="cat-icon">🥊</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Sports" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب رياضية</span><span class="cat-icon">⚽</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Strategy" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب استراتيجية</span><span class="cat-icon">🏰</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Arcade" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب أركيد كلاسيكية</span><span class="cat-icon">👾</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Thinking" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب ذكاء وتفكير</span><span class="cat-icon">🧠</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Girls" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب بنات</span><span class="cat-icon">👑</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/tags/Simulation" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب محاكاة</span><span class="cat-icon">✈️</span></a>
+            <a class="cat-tile" href="https://ar.y8.com/" target="_blank" rel="noopener noreferrer"><span class="cat-label">كل فئات Y8</span><span class="cat-icon">⊞</span></a>
+        </div>
+    </section>
+
+    <!-- 4. قسم Yandex Games -->
+    <section class="categories-wrapper platform-section" data-platform="yandex" style="--bg-grad: linear-gradient(120deg, #fde68a 0%, #fcd34d 55%, #fbbf24 100%);">
+        <div class="categories-top">
+            <h2>🚀 فئات موقع Yandex Games</h2>
+            <div class="nav-arrows">
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-yandex', -350)">&#8250;</button>
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-yandex', 350)">&#8249;</button>
+            </div>
+        </div>
+        <div id="grid-yandex" class="categories-two-rows">
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/action" target="_blank" rel="noopener noreferrer"><span class="cat-label">أكشن</span><span class="cat-icon">🔥</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/shooters" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب الرماية</span><span class="cat-icon">🔫</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/war" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب حرب</span><span class="cat-icon">🛡️</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/racing" target="_blank" rel="noopener noreferrer"><span class="cat-label">سباقات</span><span class="cat-icon">🏎️</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/multiplayer" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألعاب أونلاين جماعية</span><span class="cat-icon">🌐</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/two_players" target="_blank" rel="noopener noreferrer"><span class="cat-label">للاعبين اثنين</span><span class="cat-icon">👥</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/adventures" target="_blank" rel="noopener noreferrer"><span class="cat-label">مغامرات</span><span class="cat-icon">🧭</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/simulators" target="_blank" rel="noopener noreferrer"><span class="cat-label">محاكاة</span><span class="cat-icon">🚜</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/strategy" target="_blank" rel="noopener noreferrer"><span class="cat-label">استراتيجية</span><span class="cat-icon">⚔️</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/puzzles" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألغاز</span><span class="cat-icon">🧩</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/arcade" target="_blank" rel="noopener noreferrer"><span class="cat-label">أركيد</span><span class="cat-icon">🕹️</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/sports" target="_blank" rel="noopener noreferrer"><span class="cat-label">رياضة</span><span class="cat-icon">🏀</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar/category/horror" target="_blank" rel="noopener noreferrer"><span class="cat-label">رعب</span><span class="cat-icon">👻</span></a>
+            <a class="cat-tile" href="https://yandex.com/games/ar" target="_blank" rel="noopener noreferrer"><span class="cat-label">كل فئات Yandex</span><span class="cat-icon">⊞</span></a>
+        </div>
+    </section>
+
+    <!-- 5. قسم Chess.com -->
+    <section class="categories-wrapper platform-section" data-platform="chess" style="--bg-grad: linear-gradient(120deg, #bbf7d0 0%, #86efac 55%, #4ade80 100%);">
+        <div class="categories-top">
+            <h2>♟️ أقسام وفئات موقع Chess.com</h2>
+            <div class="nav-arrows">
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-chess', -350)">&#8250;</button>
+                <button type="button" class="arrow-btn" onclick="scrollRow('grid-chess', 350)">&#8249;</button>
+            </div>
+        </div>
+        <div id="grid-chess" class="categories-two-rows">
+            <a class="cat-tile" href="https://www.chess.com/ar/play/online" target="_blank" rel="noopener noreferrer"><span class="cat-label">العب شطرنج أونلاين</span><span class="cat-icon">♟️</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/play/computer" target="_blank" rel="noopener noreferrer"><span class="cat-label">العب ضد الكمبيوتر</span><span class="cat-icon">🤖</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/puzzles" target="_blank" rel="noopener noreferrer"><span class="cat-label">ألغاز الشطرنج</span><span class="cat-icon">🧩</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/puzzles/rush" target="_blank" rel="noopener noreferrer"><span class="cat-label">اندفاع الألغاز (Puzzle Rush)</span><span class="cat-icon">⚡</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/lessons" target="_blank" rel="noopener noreferrer"><span class="cat-label">دروس وتعلم الشطرنج</span><span class="cat-icon">🎓</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/variants" target="_blank" rel="noopener noreferrer"><span class="cat-label">أوضاع شطرنج متنوعة</span><span class="cat-icon">👑</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar/tournaments" target="_blank" rel="noopener noreferrer"><span class="cat-label">بطولات الشطرنج</span><span class="cat-icon">🏆</span></a>
+            <a class="cat-tile" href="https://www.chess.com/ar" target="_blank" rel="noopener noreferrer"><span class="cat-label">الرئيسية Chess.com</span><span class="cat-icon">⊞</span></a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
